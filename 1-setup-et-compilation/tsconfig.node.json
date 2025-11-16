@@ -1,0 +1,7 @@
+{
+  "include": ["src/node.ts"],
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node"
+  }
+}
