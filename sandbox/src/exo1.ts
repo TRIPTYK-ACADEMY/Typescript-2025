@@ -5,11 +5,9 @@
  * Copyright (c) 2014-2017, Jon Schlinkert.
  * Released under the MIT License.
  */
-
-
 'use strict';
 
-function diff(arr) {
+function diff(arr: number[]): number[] {
   var len = arguments.length;
   var idx = 0;
   while (++idx < len) {
@@ -18,13 +16,13 @@ function diff(arr) {
   return arr;
 };
 
-function diffArray(one, two) {
+function diffArray(one: number[], two: number[]): number[] {
   if (!Array.isArray(two)) {
     return one.slice();
   }
 
-  var tlen = two.length
-  var olen = one.length;
+  var tlen: number = two.length
+  var olen: number = one.length;
   var idx = -1;
   var arr = [];
 

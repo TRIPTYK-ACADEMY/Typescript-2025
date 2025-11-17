@@ -20,6 +20,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `
 
-document.querySelector("button")?.addEventListener("click", function () {
+
+document.querySelector("button")!.addEventListener("click", function () {
   this.textContent = "monNouveauNom";
 })

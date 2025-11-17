@@ -1,7 +1,7 @@
 # LE Unknown, La Never et le Any
 
 Le bon, la brute et le truand des types en TypeScript.
- 
+
 ## Le type `unknown`
 
 Le type `unknown` est le type sûr par défaut pour les valeurs dont le type n'est pas connu à l'avance.
@@ -15,15 +15,6 @@ function logMessage(value: unknown) {
     }
     console.log(value);
 }
-```
-
-Une fonction populaire qui retourne `unknown` est `fetch.json()`.
-
-```typescript
-const response = await fetch("https://api.example.com/data");
-const data = await response.json();
-
-//data is of type unknown
 ```
 
 ## Le type `never`
@@ -41,13 +32,13 @@ Fort utile également pour le testing.
 ```typescript
 return TransportChangeset(
     {
-    id: transport?.id,
-    position: transport.position,
-    deliveryLocations: [],
-    loadLocations: [],
-    price: transport.price,
-    vehicleType: transport?.vehicleType,
-    type: transport?.type,
+        id: transport?.id,
+        position: transport.position,
+        deliveryLocations: [],
+        loadLocations: [],
+        price: transport.price,
+        vehicleType: transport?.vehicleType,
+        type: transport?.type,
     },
     // normalement, on passe un objet avec les validations, mais ici, on ignore tout simplement.
     {} as never
