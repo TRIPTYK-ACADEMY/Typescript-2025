@@ -1,4 +1,4 @@
-async function addition(a: number, b: number): Promise<number> {
+async function addition2(a: number, b: number): Promise<number> {
     return a + b;
 }
 

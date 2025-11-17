@@ -66,9 +66,9 @@ function addition(a, b, print) {
 addition(5, 5);
 addition(6, 6, true);
 // attention, l'optionnalité est différente à l'utilisation q'un paramètre undefined. le paramètre undefined devra être mentionné.
-function addition2(a, b, print) {
+function addition3(a, b, print) {
 }
-addition2(5, 5, undefined);
+addition3(5, 5, undefined);
 console.log("a", "b", "c", 42);
 // ... => tous les paramètres de la fonction
 function additionInfinie(...parametres) {
