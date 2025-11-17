@@ -49,3 +49,26 @@ console.log(gilles);
 
 
 obj.name
+
+type ObjetPartiel = {
+    name: string,
+    // on vient dire que notre objet peut être constitué de n'importe quelle clé de type string avec une valeur inconnue
+    [key: string]: unknown
+}
+
+let monObjetAvecDesProprietesInconnues: ObjetPartiel = {
+    name: "Amaury",
+    truc: 14
+}
+
+type ResponseAPI = {
+    attributes: {},
+    meta: {
+        [key: string]: unknown
+    }
+}
+
+// ici: erreur car pas de clés supplémentaire autorisées
+// sebastien.truc
+// ici: pas d'erreur car des clés supplémentaires de type unknown sont autorisée
+monObjetAvecDesProprietesInconnues.truc
