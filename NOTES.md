@@ -1,0 +1,6 @@
+- HTML/CSS
+- Javascript
+- Node.JS
+- React
+- Git (bases)
+- Tailwind
