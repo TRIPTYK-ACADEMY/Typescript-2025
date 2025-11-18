@@ -25,7 +25,26 @@
  * Assurez-vous que si une variable requise est manquante, une erreur descriptive est levée.
 */
 
-interface Person {
-    name: string;
-    age: number;
+let envFileContent = `
+PORT=3000
+HOST=localhost
+NODE_ENV=development
+OPENAI_API_KEY=1234
+`;
+
+class ConfigLoader {
+    load() {
+
+    }
+
+    // renverra la valeur d'une variable d'environnement
+    get() {
+
+    }
 }
+
+const cl = new ConfigLoader();
+cl.load(envFileContent);
+cl.get("PORT") // => 3000
+cl.get("HOST") // => localhost
+

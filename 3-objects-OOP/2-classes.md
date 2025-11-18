@@ -27,7 +27,6 @@ console.log(person.greet()); // "Bonjour, je suis Alice"
 
 - `public` : accessible partout (par défaut)
 - `private` : accessible uniquement dans la classe
-- `protected` : accessible dans la classe et ses sous-classes
 
 ```typescript
 class BankAccount {

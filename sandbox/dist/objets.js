@@ -31,3 +31,11 @@ console.log(gilles);
 //     age: 15
 // };
 obj.name;
+let monObjetAvecDesProprietesInconnues = {
+    name: "Amaury",
+    truc: 14
+};
+// ici: erreur car pas de clés supplémentaire autorisées
+// sebastien.truc
+// ici: pas d'erreur car des clés supplémentaires de type unknown sont autorisée
+monObjetAvecDesProprietesInconnues.truc;
