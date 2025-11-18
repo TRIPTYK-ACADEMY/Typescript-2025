@@ -4,6 +4,9 @@ class Person {
     prop;
     city;
     age = 14;
+    static makePersonFromMons(prop, age) {
+        return new Person(prop, age, "Mons");
+    }
     constructor(prop, age, city) {
         this.prop = prop;
         this.city = city;
@@ -28,6 +31,7 @@ class Person {
         }
     }
 }
+Person.makePersonFromMons("Amaury", 14);
 // class UserProfile {
 //     private uniqueId: number;
 //     public constructor(
@@ -65,3 +69,17 @@ class Temperatoure {
 }
 const temp = new Temperatoure(50);
 temp.temperature = -700;
+console.log(temp.temperature);
+class Article {
+    title;
+    content;
+    constructor(title, content) {
+        this.title = title;
+        this.content = content;
+    }
+    static async makeArticle() {
+        // on peut faire des appels asynchrones ici
+        return new Article("Contenu", "Blah lorem ipsum");
+    }
+}
+// const article = await Article.makeArticle();

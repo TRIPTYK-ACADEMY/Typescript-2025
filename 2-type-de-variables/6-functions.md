@@ -83,3 +83,20 @@ function concatenate(separator: string, ...strings: string[]): string {
 }
 ```
 
+## Typage d'une fonction fléchée
+
+### Typage inline
+```typescript
+const divide: (a: number, b: number) => number = (a, b) => {
+    return a / b;
+};
+```
+
+### Typage avec type alias
+```typescript
+type MathOperation = (a: number, b: number) => number;
+
+const modulo: MathOperation = (a, b) => {
+    return a % b;
+};
+```
