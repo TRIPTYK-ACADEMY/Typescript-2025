@@ -26,7 +26,7 @@ type MaStructure = {
     color(): void;
 }
 
-class UserModel implements UserInterface, MaStructure {
+class UserModelInterface implements UserInterface, MaStructure {
     age: number;
 
     color(): void {
