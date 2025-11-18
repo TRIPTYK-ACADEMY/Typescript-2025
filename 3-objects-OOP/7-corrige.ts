@@ -1,7 +1,9 @@
+import readline from "readline";
+
 enum CellType {
     EMPTY = ".",
     SNAKE = "🟩",
-    FOOD = "🍎"
+    FOOD = "F"
 }
 
 enum Direction {
@@ -162,4 +164,3 @@ const interval = setInterval(() => {
     }
     game.display();
 }, 1000);
-

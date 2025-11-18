@@ -16,28 +16,42 @@
  */
 import readline from "readline";
 
-class Board {
-    // Implémenter
+class Game {
+    public tick() {
+
+    }
+
+    public display() {
+
+    }
+
+    public isGameOver() {
+
+    }
 }
 
-const game = new Board();
+const game = new Game();
 game.display();
 
+// authorise le terminal à émettre des évènements lorsque vous appuyez sur une touche
 readline.emitKeypressEvents(process.stdin);
 process.stdin.setRawMode(true);
 
 // Écouter les touches du clavier
 process.stdin.on('keypress', (str, key) => {
-    // gérer le changement de direction
+    // gérer le changement de direction ici
 });
 
 // Boucle de jeu
 const interval = setInterval(() => {
     game.tick();
     game.display();
+
+    // si le jeu est fini, on quitte le programme
     if (game.isGameOver()) {
         clearInterval(interval);
         process.exit();
     }
+    // on rafraîchis toutes les 750ms l'écran
 }, 750);
 

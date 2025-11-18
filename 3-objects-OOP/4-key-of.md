@@ -15,3 +15,10 @@ type PersonKeys = keyof Person; // "name" | "age"
 ```
 
 Ici, `PersonKeys` sera un type qui peut être soit `"name"` soit `"age"`.
+
+Si je veux un tableau des clés d'un objet, je peux faire comme suit :
+
+```typescript
+const person: Person = { name: "Alice", age: 30 };
+const keys: (keyof Person)[] = ["name", "age"];
+```

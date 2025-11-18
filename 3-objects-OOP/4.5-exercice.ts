@@ -24,3 +24,8 @@
  * 
  * Assurez-vous que si une variable requise est manquante, une erreur descriptive est levée.
 */
+
+interface Person {
+    name: string;
+    age: number;
+}
